@@ -128,6 +128,7 @@ public class HttpUtils  {
         return URL+"?key="+API_KEY+"&info="+msg;
     }
 
+    //这是一个简易版本，后期将会在此基础上完善功能
 
 
 }
