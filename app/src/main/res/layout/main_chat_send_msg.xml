@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    >
+
+    <TextView
+        android:id="@+id/chat_send_createData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2015-10-21 10:05:00"
+        style="@style/chat_date_style"/>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true">
+
+        <LinearLayout
+            android:id="@+id/ly_chat_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentRight="true">
+            <ImageView
+                android:id="@+id/chat_send_icon"
+                android:layout_width="49dp"
+                android:layout_height="49dp"
+                android:src="@mipmap/send_head_icon"
+                />
+            <TextView
+                android:id="@+id/chat_send_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="虎扑jrs代表"
+                android:textSize="14sp"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/chat_send_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="感谢虎扑提供这个机会"
+            android:textSize="18sp"
+            android:textColor="#000"
+            android:minHeight="50dp"
+            android:lineSpacingExtra="2dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center_vertical"
+            android:background="@drawable/chat_send_msg"
+            android:layout_toLeftOf="@id/ly_chat_icon"/>
+    </RelativeLayout>
+</LinearLayout>
